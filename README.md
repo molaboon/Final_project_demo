@@ -1,6 +1,11 @@
 # Final_project_demo
 組員 108321010 陳宇鴻 108321008蔡宜哲
 
+Demo video:
+https://www.youtube.com/watch?v=vMCLttaGje8&ab_channel=%E9%99%B3%E5%AE%87%E6%96%87
+
+Code:
+
 	module finalpro(
 	input CLK, reset, start,restart,level1,level2,
 	output reg [0:27] led,
