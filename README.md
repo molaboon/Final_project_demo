@@ -5,6 +5,7 @@ Demo video:
 https://www.youtube.com/watch?v=vMCLttaGje8&ab_channel=%E9%99%B3%E5%AE%87%E6%96%87
 
 功能：
+
 1.玩家能夠左右移動爆爆王來發射炸彈，並向上發射。
 
 2.畫面最上方會設有2排的磚塊。
@@ -14,6 +15,7 @@ https://www.youtube.com/watch?v=vMCLttaGje8&ab_channel=%E9%99%B3%E5%AE%87%E6%96%
 4.玩家與磚塊之間會有從左方跑出來的黑曜石，黑曜石無法被引爆，黑曜石以一格/2s的速率往左跑並阻擋炸彈。
 
 5.右上方的七段顯示器會記錄現在的球數。
+
 Code:
 
 	module finalpro(
