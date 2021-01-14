@@ -1,5 +1,5 @@
 # Final_project_demo
-module finalpro(
+	module finalpro(
 	input CLK, reset, start,restart,level1,level2,
 	output reg [0:27] led,
 	//output reg [2:0] life,
@@ -7,7 +7,7 @@ module finalpro(
 	input throw,
 	//output testLED,
 	output reg a,b,c,d,e,f,g
-);
+	);
 
 	reg [7:0]blockFirst =  8'b11111111;
 	reg [7:0]blockSecond = 8'b11111111;
@@ -260,36 +260,36 @@ module finalpro(
 			end
 		end
 	end //end of always	
-endmodule
+	endmodule
 
 
-// 顯示用的除頻器
-module divfreq(input CLK, output reg CLK_div);
-	reg[24:0] Count;
-	always @(posedge CLK)
-	begin
-		if(Count>25000)
-			begin
-				Count <= 25'b0;
-				CLK_div <= ~CLK_div;
-			end
-		else
-			Count <= Count + 1'b1;
-	end
-endmodule
+	// 顯示用的除頻器
+	module divfreq(input CLK, output reg CLK_div);
+		reg[24:0] Count;
+		always @(posedge CLK)
+		begin
+			if(Count>25000)
+				begin
+					Count <= 25'b0;
+					CLK_div <= ~CLK_div;
+				end
+			else
+				Count <= Count + 1'b1;
+		end
+	endmodule
 
 
-// 按鈕用的除頻器
-module buttondivfreq(input CLK, output reg CLK_div);
-	reg[24:0] Count;
-	always @(posedge CLK)
-	begin
-		if(Count>2500000)			// 20 Hz
-			begin
-				Count <= 25'b0;
-				CLK_div <= ~CLK_div;
-			end
-		else
-			Count <= Count + 1'b1;
-	end
-endmodule
+	// 按鈕用的除頻器
+	module buttondivfreq(input CLK, output reg CLK_div);
+		reg[24:0] Count;
+		always @(posedge CLK)
+		begin
+			if(Count>2500000)			// 20 Hz
+				begin
+					Count <= 25'b0;
+					CLK_div <= ~CLK_div;
+				end
+			else
+				Count <= Count + 1'b1;
+		end
+	endmodule
